@@ -59,6 +59,7 @@ namespace Game.Player
         void StartJump()
         {
             if (!m_onGround) return;
+            PlayerMoveObserver.PlayerJump();
             m_currentJumpTime = m_jumpTime;
         }
         
