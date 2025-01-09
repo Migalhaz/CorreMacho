@@ -1,7 +1,8 @@
 using MigalhaSystem.Singleton;
 using UnityEngine.InputSystem;
 using UnityEngine;
-namespace Game
+
+namespace Game.GameSystem
 {
     [RequireComponent(typeof(PlayerInput))]
     public class InputManager : Singleton<InputManager>

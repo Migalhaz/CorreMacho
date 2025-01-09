@@ -33,7 +33,7 @@ namespace MigalhaSystem.Singleton
             }
             if (m_DDOL)
             {
-                DontDestroyOnLoad(Instance.gameObject);
+                DontDestroyOnLoad(gameObject);
             }
         }
 

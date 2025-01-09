@@ -1,0 +1,89 @@
+using Game.GameSystem;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+namespace Game.Player
+{
+    [RequireComponent(typeof(Rigidbody2D))]
+    public class PlayerMove : MonoBehaviour
+    {
+        [Header("Components")]
+        [SerializeField] Rigidbody2D m_rig;
+
+        [Header("Jump Settings")]
+        [SerializeField, Min(0)] float m_jumpForce;
+        [SerializeField, Min(0)] float m_jumpTime;
+        float m_currentJumpTime;
+        bool m_onGround;
+
+        [Header("Collision Settings")]
+        [SerializeField] Trigger.System2D.CircleTrigger2D m_groundCheck;
+
+        private void OnEnable()
+        {
+            InputObserver.OnJump += JumpInput;
+            m_groundCheck.m_TriggerEvents.OnTriggerEnterAddListner(CancelJump);
+        }
+
+        private void OnDisable()
+        {
+            InputObserver.OnJump -= JumpInput;
+            m_groundCheck.m_TriggerEvents.OnTriggerEnterRemoveListner(CancelJump);
+        }
+
+
+        void JumpInput(InputAction.CallbackContext context)
+        {
+            if (context.performed)
+            {
+                StartJump();
+            }
+            if (context.canceled)
+            {
+                CancelJump();
+            }
+        }
+
+        private void Update()
+        {
+            Jump();
+        }
+
+        private void FixedUpdate()
+        {
+            m_onGround = m_groundCheck.InTrigger(transform.position);
+        }
+
+        void StartJump()
+        {
+            if (!m_onGround) return;
+            m_currentJumpTime = m_jumpTime;
+        }
+        
+        void CancelJump()
+        {
+            m_currentJumpTime = 0;
+        }
+
+        void Jump()
+        {
+            if (m_currentJumpTime > 0)
+            {
+                m_rig.velocity = Vector3.up * m_jumpForce;
+                m_currentJumpTime -= Time.deltaTime;
+            }
+        }
+
+        private void OnDrawGizmosSelected()
+        {
+            m_groundCheck.DrawTrigger(transform.position);
+        }
+
+        private void Reset()
+        {
+            TryGetComponent(out m_rig);
+        }
+    }
+}
