@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Game
+namespace Game.GameSystem
 {
     public class GameScenesManager : Singleton<GameScenesManager>
     {
