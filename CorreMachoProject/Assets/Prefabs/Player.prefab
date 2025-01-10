@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5937225968377858492}
   - component: {fileID: 2426691310043263396}
   - component: {fileID: 5955630370214673221}
+  - component: {fileID: 646342721570845735}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -205,6 +206,20 @@ MonoBehaviour:
     m_triggerOffset: {x: 0, y: 0}
     m_triggerSize: {x: 1, y: 1}
     m_triggerAngle: 0
+--- !u!114 &646342721570845735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4100019262642425165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ba4b94d229aa1044ba1fa3e6b733c13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_basePointsAdd: 0.05
+  m_secondsToBuffPoints: 30
 --- !u!1 &4466762883254111719
 GameObject:
   m_ObjectHideFlags: 0
