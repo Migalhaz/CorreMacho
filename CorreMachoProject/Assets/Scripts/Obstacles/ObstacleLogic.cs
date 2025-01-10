@@ -1,3 +1,4 @@
+using Game.Player;
 using MigalhaSystem.Extensions;
 using MigalhaSystem.Pool;
 using System.Collections;
@@ -13,13 +14,23 @@ namespace Game.Obstacles
         [SerializeField] Timer m_lifeTime;
 
         [Header("Move Settings")]
-        [SerializeField] FloatRange m_speed;
-        Vector2 m_moveVector;
+        [SerializeField, Min(0)] float m_speed;
+        [SerializeField, Min(1)] float m_speedBuffer;
+        [SerializeField] FloatRange m_speedRange;
 
         private void OnEnable()
         {
             m_lifeTime.StartTimer();
-            m_moveVector = new Vector2(-1 * Time.deltaTime * m_speed.GetRandomValue(), 0);
+        }
+
+        float GetMoveSpeed()
+        {
+            PlayerManager player = PlayerManager.ProvideInstance();
+            int points = player.m_PlayerPoints.Points;
+            float buff = points / m_speedBuffer;
+            float finalSpeed = m_speedRange.Clamp(m_speed + buff);
+            Debug.Log($"MoveSpeed: {finalSpeed}");
+            return finalSpeed;
         }
 
         private void Update()
@@ -30,7 +41,9 @@ namespace Game.Obstacles
 
         void Move()
         {
-            transform.Translate(m_moveVector, Space.World);
+            float moveSpeed = GetMoveSpeed() * Time.deltaTime;
+            Vector3 finalMoveVector = moveSpeed * Vector3.left;
+            transform.Translate(finalMoveVector, Space.World);
         }
 
         void LifeTime()

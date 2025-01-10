@@ -49,10 +49,6 @@ namespace Game.Obstacles
         [SerializeField] List<PoolData> m_availableObstacles;
         public void DoSpawn()
         {
-#if DEBUG
-            Debug.Log($"Spawning at {m_spawnPoint.name}");
-#endif
-
             if (m_availableObstacles.IsNullOrEmpty()) return;
             PoolData obstacle = m_availableObstacles.GetRandom();
             PoolManager.ProvideInstance().PullObject(obstacle, m_spawnPoint.position, Quaternion.identity);
