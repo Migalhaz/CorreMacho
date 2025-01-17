@@ -140,6 +140,7 @@ MonoBehaviour:
   m_rig: {fileID: 620812219347505367}
   m_jumpForce: 15
   m_jumpTime: 0.2
+  m_jumpBufferingTime: 0.1
   m_groundCheck:
     m_triggerLayerMask:
       serializedVersion: 2

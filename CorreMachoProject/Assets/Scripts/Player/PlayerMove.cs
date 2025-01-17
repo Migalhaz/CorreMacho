@@ -18,6 +18,11 @@ namespace Game.Player
         float m_currentJumpTime;
         bool m_onGround;
 
+        [Header("Jump Buffering")]
+        [SerializeField, Min(0)] float m_jumpBufferingTime;
+        float m_jumpBufferingCurrentTime;
+
+
         [Header("Collision Settings")]
         [SerializeField] Trigger.System2D.CircleTrigger2D m_groundCheck;
 
@@ -42,6 +47,7 @@ namespace Game.Player
             }
             if (context.canceled)
             {
+                m_jumpBufferingCurrentTime = 0;
                 CancelJump();
             }
         }
@@ -49,6 +55,7 @@ namespace Game.Player
         private void Update()
         {
             Jump();
+            JumpBuffering();
         }
 
         private void FixedUpdate()
@@ -58,13 +65,24 @@ namespace Game.Player
 
         void StartJump()
         {
-            if (!m_onGround) return;
+            if (!m_onGround)
+            {
+                m_jumpBufferingCurrentTime = m_jumpBufferingTime;
+                return;
+            }
+            DoJump();
+        }
+
+        void DoJump()
+        {
+            m_jumpBufferingCurrentTime = 0;
             PlayerMoveObserver.PlayerJump();
             m_currentJumpTime = m_jumpTime;
         }
         
         void CancelJump()
         {
+            
             m_currentJumpTime = 0;
         }
 
@@ -74,6 +92,16 @@ namespace Game.Player
             {
                 m_rig.velocity = Vector3.up * m_jumpForce;
                 m_currentJumpTime -= Time.deltaTime;
+            }
+        }
+
+        void JumpBuffering()
+        {
+            if (m_jumpBufferingCurrentTime <= 0) return;
+            m_jumpBufferingCurrentTime -= Time.deltaTime;
+            if (m_jumpBufferingCurrentTime > 0 && m_onGround)
+            {
+                DoJump();
             }
         }
 
