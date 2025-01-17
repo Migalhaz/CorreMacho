@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: cavalo e cangaceiro-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1060
+        width: 560
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846fd40f00ff52d4ba38993c18c066c8
+      internalID: -929221690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalo e cangaceiro-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1060
+        width: 560
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92da7fce6c96055469b9d9b7e863db4a
+      internalID: 1663272867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalo e cangaceiro-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1060
+        width: 560
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74609b519f55134fae5073b57dcfa46
+      internalID: 1949822059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalo e cangaceiro-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 530
+        width: 560
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 333fe968332c6ab4b9d8f69a1efb6959
+      internalID: 2020915042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalo e cangaceiro-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 530
+        width: 560
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636bc1e28ecef6148becbe14181b2a62
+      internalID: -250739409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalo e cangaceiro-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 530
+        width: 560
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b25641a587be36b47bbb69508bb5a097
+      internalID: 110842004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalo e cangaceiro-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 560
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eeb124b6fc623f41b036d8401cfe627
+      internalID: 22262254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cavalo e cangaceiro-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 560
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bbcb8fd8bacaf9499020c4c92066cf7
+      internalID: -965475557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +274,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cavalo e cangaceiro-Sheet_0: -929221690
+      cavalo e cangaceiro-Sheet_1: 1663272867
+      cavalo e cangaceiro-Sheet_2: 1949822059
+      cavalo e cangaceiro-Sheet_3: 2020915042
+      cavalo e cangaceiro-Sheet_4: -250739409
+      cavalo e cangaceiro-Sheet_5: 110842004
+      cavalo e cangaceiro-Sheet_6: 22262254
+      cavalo e cangaceiro-Sheet_7: -965475557
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
