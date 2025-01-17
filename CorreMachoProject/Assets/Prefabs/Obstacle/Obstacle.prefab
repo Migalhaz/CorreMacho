@@ -115,7 +115,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -157,6 +157,8 @@ MonoBehaviour:
     m_onTimerElapsed:
       m_PersistentCalls:
         m_Calls: []
-  m_speed:
-    minValue: 8
-    maxValue: 15
+  m_speed: 6
+  m_speedBuffer: 10000
+  m_speedRange:
+    minValue: 6
+    maxValue: 25
