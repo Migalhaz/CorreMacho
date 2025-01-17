@@ -29,7 +29,6 @@ namespace Game.Obstacles
             int points = player.m_PlayerPoints.Points;
             float buff = points / m_speedBuffer;
             float finalSpeed = m_speedRange.Clamp(m_speed + buff);
-            Debug.Log($"MoveSpeed: {finalSpeed}");
             return finalSpeed;
         }
 
