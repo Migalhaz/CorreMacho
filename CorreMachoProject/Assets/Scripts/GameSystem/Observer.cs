@@ -13,7 +13,9 @@ namespace Game
 	public static class PlayerMoveObserver
 	{
 		public static event Action OnPlayerJump = null;
+		public static event Action OnPlayerGrounded = null;
 		public static void PlayerJump() => OnPlayerJump?.Invoke();
+		public static void PlayerGrounded() => OnPlayerGrounded?.Invoke();
 	}
 
 	public static class PlayerHealthObserver
