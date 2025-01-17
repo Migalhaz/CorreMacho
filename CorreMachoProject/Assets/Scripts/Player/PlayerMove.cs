@@ -29,13 +29,13 @@ namespace Game.Player
         private void OnEnable()
         {
             InputObserver.OnJump += JumpInput;
-            m_groundCheck.m_TriggerEvents.OnTriggerEnterAddListner(CancelJump);
+            m_groundCheck.m_TriggerEvents.OnTriggerEnterAddListner(EnterGround);
         }
 
         private void OnDisable()
         {
             InputObserver.OnJump -= JumpInput;
-            m_groundCheck.m_TriggerEvents.OnTriggerEnterRemoveListner(CancelJump);
+            m_groundCheck.m_TriggerEvents.OnTriggerEnterRemoveListner(EnterGround);
         }
 
 
@@ -84,6 +84,12 @@ namespace Game.Player
         {
             
             m_currentJumpTime = 0;
+        }
+
+        void EnterGround()
+        {
+            PlayerMoveObserver.PlayerGrounded();
+            CancelJump();
         }
 
         void Jump()
