@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 
 namespace MigalhaSystem.Singleton
@@ -61,8 +62,7 @@ namespace MigalhaSystem.Singleton
             if (IsNull) return ProvideInstance();
             Destroy(Instance.gameObject);
             instance = null;
-            CreateNewSingletonObject();
-            return instance;
+            return CreateNewSingletonObject();
         }
     }
 }

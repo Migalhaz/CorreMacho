@@ -39,14 +39,14 @@ namespace Game.GameSystem
         }
 
         void LoadDeathScreen()
-        { 
+        {
+            GameManager.ProvideInstance().PauseGame(false);
             GameScenesManager gameScene = GameScenesManager.ProvideInstance();
             gameScene.LoadSingleSceneWithData(gameScene.DeathScreenScene, m_currentPoints);
         }
 
         void PauseInput(InputAction.CallbackContext context)
         {
-            Debug.Log("A");
             if (!context.performed) return;
             GameSettingsObserver.PauseButtonClick();
         }
