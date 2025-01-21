@@ -52,7 +52,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 409405a436d9ea4449b2ac71543ddb20, type: 2}
   - m_spawnPoint: {fileID: 2994762834686632995}
     m_availableObstacles:
-    - {fileID: 11400000, guid: 409405a436d9ea4449b2ac71543ddb20, type: 2}
+    - {fileID: 11400000, guid: 86c1736841b3c7a46934d02c09e42be7, type: 2}
   m_pointsToMaxTime: 50000
   m_spawnTime:
     minValue: 0.8
