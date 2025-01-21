@@ -668,19 +668,10 @@ MonoBehaviour:
   - m_spawnPoint: {fileID: 1513911991}
     m_availableObstacles:
     - {fileID: 11400000, guid: 409405a436d9ea4449b2ac71543ddb20, type: 2}
-  m_timeToSpawn:
-    m_countdown: 1
-    m_repeater: 1
-    m_startTimer:
-      minValue: 1
-      maxValue: 2
-    m_timerEvents: []
-    m_onTimerStart:
-      m_PersistentCalls:
-        m_Calls: []
-    m_onTimerElapsed:
-      m_PersistentCalls:
-        m_Calls: []
+  m_pointsToMaxTime: 0
+  m_spawnTime:
+    minValue: 0
+    maxValue: 0
   m_spawnCountRange:
     minValue: 1
     maxValue: 1
@@ -692,14 +683,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 646342721570845735, guid: 805835c87afcdb14bb58968a482793b3, type: 3}
-      propertyPath: m_basePointsAdd
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 646342721570845735, guid: 805835c87afcdb14bb58968a482793b3, type: 3}
-      propertyPath: m_baseMultiplier
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 1601999574258192625, guid: 805835c87afcdb14bb58968a482793b3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.15

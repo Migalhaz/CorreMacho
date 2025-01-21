@@ -10,6 +10,14 @@ namespace Game
 		public static void Jump(InputAction.CallbackContext context) => OnJump?.Invoke(context);
 	}
 
+	public static class GameSettingsObserver
+	{
+		public static event Action OnAudioButtonClick = null;
+		public static event Action OnPauseButtonClick = null;
+		public static void AudioButtonClick() => OnAudioButtonClick?.Invoke();
+		public static void PauseButtonClick() => OnPauseButtonClick?.Invoke();
+	}
+
 	public static class PlayerMoveObserver
 	{
 		public static event Action OnPlayerJump = null;
