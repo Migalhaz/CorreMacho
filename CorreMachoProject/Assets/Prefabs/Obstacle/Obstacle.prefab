@@ -148,8 +148,8 @@ MonoBehaviour:
     m_countdown: 1
     m_repeater: 0
     m_startTimer:
-      minValue: 3
-      maxValue: 5
+      minValue: 4
+      maxValue: 4
     m_timerEvents: []
     m_onTimerStart:
       m_PersistentCalls:

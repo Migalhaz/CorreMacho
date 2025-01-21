@@ -13,5 +13,10 @@ namespace Game.GameSystem
         {
             InputObserver.Jump(context);
         }
+
+        public void OnEscape(InputAction.CallbackContext context)
+        {
+            InputObserver.Escape(context);
+        }
     }
 }

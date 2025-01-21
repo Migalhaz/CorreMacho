@@ -11,7 +11,14 @@ namespace Game.GameSystem
         [Header("Scene Index")]
         [SerializeField, Min(0)] int m_menuScene;
         [SerializeField, Min(0)] int m_gameScene;
+        [SerializeField, Min(0)] int m_deathScreenScene;
+
+        public int MenuScene => m_menuScene;
+        public int GameScene => m_gameScene;
+        public int DeathScreenScene => m_deathScreenScene;
+
         Dictionary<int, LoadSceneMode> m_loadedScenes = new();
+        object m_data;
 
         private void OnEnable()
         {
@@ -24,6 +31,37 @@ namespace Game.GameSystem
         {
             SceneManager.sceneLoaded -= AddSceneToLoadedList;
             SceneManager.sceneUnloaded -= RemoveSceneToLoadedList;
+        }
+
+        public T GetData<T>()
+        {
+            if (m_data == null)
+            {
+                Debug.LogWarning("Data is null!");
+                return default;
+            }
+            if (m_data is T data)
+            {
+                m_data = null;
+                return data;
+            }
+            try
+            {
+                data = (T)m_data;
+                m_data = null;
+                return data;
+            }
+            catch (System.Exception e)
+            {
+                Debug.LogException(e);
+                return default;
+            }
+        }
+
+        public void LoadSingleSceneWithData(int sceneIndex, object data)
+        {
+            m_data = data;
+            LoadSingleScene(sceneIndex);
         }
 
         void AddSceneToLoadedList(Scene scene, LoadSceneMode loadSceneMode)
