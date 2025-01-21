@@ -47,3 +47,4 @@ MonoBehaviour:
   m_DDOL: 1
   m_menuScene: 1
   m_gameScene: 2
+  m_deathScreenScene: 3

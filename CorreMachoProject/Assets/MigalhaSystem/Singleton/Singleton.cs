@@ -31,6 +31,7 @@ namespace MigalhaSystem.Singleton
                 Destroy(gameObject);
                 return;
             }
+            instance = this as T;
             if (m_DDOL)
             {
                 DontDestroyOnLoad(gameObject);

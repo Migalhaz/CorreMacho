@@ -7,7 +7,9 @@ namespace Game
 	public static class InputObserver
 	{
 		public static event Action<InputAction.CallbackContext> OnJump = null;
+		public static event Action<InputAction.CallbackContext> OnEscape = null;
 		public static void Jump(InputAction.CallbackContext context) => OnJump?.Invoke(context);
+		public static void Escape(InputAction.CallbackContext context) => OnEscape?.Invoke(context);
 	}
 
 	public static class GameSettingsObserver

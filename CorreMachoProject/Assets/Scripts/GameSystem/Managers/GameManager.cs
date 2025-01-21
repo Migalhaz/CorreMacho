@@ -38,7 +38,7 @@ namespace Game
         public void PauseGame(bool pause)
         {
             m_GamePaused = pause;
-            float timeScale = pause ? 0.0f : 1.0f;
+            float timeScale = pause ? 0f : 1f;
             Time.timeScale = timeScale;
         }
 
@@ -51,7 +51,7 @@ namespace Game
 
         void SwitchPause()
         {
-            PauseGame(m_GamePaused);
+            PauseGame(!m_GamePaused);
         }
 
         void SwitchAudioSettings()

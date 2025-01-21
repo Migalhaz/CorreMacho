@@ -22,12 +22,13 @@ namespace Game.Player
 
         private void Update()
         {
+            if (Time.timeScale <= 0) return;
             m_timeAlive += Time.deltaTime;
             m_points += m_basePointsAdd + PointsBuffer();
             PlayerPointsObserver.UpdatePoint(Points);
         }
 
-        public float PointsBuffer()
+        float PointsBuffer()
         {
             float wholeTimeInt = Mathf.FloorToInt(TimeAlive / m_secondsToBuffPoints);
             return wholeTimeInt;
