@@ -49,10 +49,11 @@ MonoBehaviour:
   m_spawners:
   - m_spawnPoint: {fileID: 6531360733552792158}
     m_availableObstacles:
-    - {fileID: 11400000, guid: 409405a436d9ea4449b2ac71543ddb20, type: 2}
+    - {fileID: 11400000, guid: ca89abf394849774a8286facc839756a, type: 2}
   - m_spawnPoint: {fileID: 2994762834686632995}
     m_availableObstacles:
-    - {fileID: 11400000, guid: 409405a436d9ea4449b2ac71543ddb20, type: 2}
+    - {fileID: 11400000, guid: 86c1736841b3c7a46934d02c09e42be7, type: 2}
+    - {fileID: 11400000, guid: 377179afe6ac6e146adb3e28695f2207, type: 2}
   m_pointsToMaxTime: 50000
   m_spawnTime:
     minValue: 0.8
@@ -85,7 +86,7 @@ Transform:
   m_GameObject: {fileID: 3057636388204616871}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.5, z: 0}
+  m_LocalPosition: {x: 10, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -116,7 +117,7 @@ Transform:
   m_GameObject: {fileID: 6583937874510219434}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 10, y: -1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
