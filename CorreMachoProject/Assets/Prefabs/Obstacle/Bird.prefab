@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7284692866820915032, guid: 5557f2b7fba62b047bc78147e37ef052, type: 3}
+      propertyPath: m_obstaclePool
+      value: 
+      objectReference: {fileID: 11400000, guid: ca89abf394849774a8286facc839756a, type: 2}
     - target: {fileID: 7768372546864181779, guid: 5557f2b7fba62b047bc78147e37ef052, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

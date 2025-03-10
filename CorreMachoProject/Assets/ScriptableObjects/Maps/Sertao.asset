@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5348cd298eef10647bd4615bd6e201bf, type: 3}
+  m_Name: Sertao
+  m_EditorClassIdentifier: 
+  m_backgrounds:
+  - m_backgroundSpeed: 2
+    m_dynamicSpeed: 1
+    m_enableSpeedClamp: 1
+    m_speedClamp:
+      minValue: 0
+      maxValue: 4
+    m_backgroundSize: {x: 21.94, y: 0}
+    m_backgroundSprite: {fileID: 21300000, guid: a23ed8ff6db36ba41a92657c406416f7, type: 3}
+  - m_backgroundSpeed: 4
+    m_dynamicSpeed: 1
+    m_enableSpeedClamp: 1
+    m_speedClamp:
+      minValue: 0
+      maxValue: 10
+    m_backgroundSize: {x: 21.94, y: 0}
+    m_backgroundSprite: {fileID: 21300000, guid: 53aa8e0a11fa54b4795ed9653db3f3ea, type: 3}
+  - m_backgroundSpeed: 6
+    m_dynamicSpeed: 1
+    m_enableSpeedClamp: 1
+    m_speedClamp:
+      minValue: 6
+      maxValue: 25
+    m_backgroundSize: {x: 21.94, y: 0}
+    m_backgroundSprite: {fileID: 21300000, guid: 07883a29c4134cf408bda0b1333c1def, type: 3}
+  - m_backgroundSpeed: 6
+    m_dynamicSpeed: 1
+    m_enableSpeedClamp: 1
+    m_speedClamp:
+      minValue: 6
+      maxValue: 25
+    m_backgroundSize: {x: 21.94, y: 0}
+    m_backgroundSprite: {fileID: 21300000, guid: 4d631f9f4aa4bb7478f54cd2fb6b2cb9, type: 3}
+  - m_backgroundSpeed: 0.3
+    m_dynamicSpeed: 1
+    m_enableSpeedClamp: 1
+    m_speedClamp:
+      minValue: 0
+      maxValue: 1.5
+    m_backgroundSize: {x: 21.94, y: 0}
+    m_backgroundSprite: {fileID: 21300000, guid: 3e7dc32be4c23aa42a4a27c40840fb95, type: 3}

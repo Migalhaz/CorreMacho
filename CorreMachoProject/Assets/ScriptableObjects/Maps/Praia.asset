@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5348cd298eef10647bd4615bd6e201bf, type: 3}
+  m_Name: Praia
+  m_EditorClassIdentifier: 
+  m_backgrounds:
+  - m_backgroundSpeed: 2
+    m_dynamicSpeed: 1
+    m_enableSpeedClamp: 1
+    m_speedClamp:
+      minValue: 0
+      maxValue: 4
+    m_backgroundSize: {x: 21.94, y: 0}
+    m_backgroundSprite: {fileID: 21300000, guid: 1e506ccf4c06e5d4cb2bb7b443b45f5d, type: 3}
+  - m_backgroundSpeed: 4
+    m_dynamicSpeed: 1
+    m_enableSpeedClamp: 1
+    m_speedClamp:
+      minValue: 0
+      maxValue: 10
+    m_backgroundSize: {x: 21.94, y: 0}
+    m_backgroundSprite: {fileID: 21300000, guid: 71034293c0ed0d647b0350767e7a5f0f, type: 3}
+  - m_backgroundSpeed: 6
+    m_dynamicSpeed: 1
+    m_enableSpeedClamp: 1
+    m_speedClamp:
+      minValue: 6
+      maxValue: 25
+    m_backgroundSize: {x: 21.94, y: 0}
+    m_backgroundSprite: {fileID: 21300000, guid: dd13314c3d5d44941a253917add75114, type: 3}
+  - m_backgroundSpeed: 0.3
+    m_dynamicSpeed: 1
+    m_enableSpeedClamp: 1
+    m_speedClamp:
+      minValue: 0
+      maxValue: 1.5
+    m_backgroundSize: {x: 21.94, y: 0}
+    m_backgroundSprite: {fileID: 21300000, guid: 934535177e0252348a2763512c5fda07, type: 3}

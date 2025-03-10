@@ -1,3 +1,4 @@
+using MigalhaSystem.Extensions;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,10 @@ namespace Game.Player
     {
         [SerializeField, Min(0)] float m_basePointsAdd = 1;
         [SerializeField, Min(1)] float m_secondsToBuffPoints = 30;
+
+        [Header("Game Speed")]
+        [SerializeField, Min(1)] float m_speedBuffer;
+
         float m_points;
         float m_timeAlive = 0f;
 
@@ -32,6 +37,20 @@ namespace Game.Player
         {
             float wholeTimeInt = Mathf.FloorToInt(TimeAlive / m_secondsToBuffPoints);
             return wholeTimeInt;
+        }
+
+        public float GetFinalSpeed(float currentSpeed)
+        {
+            float buff = m_points / m_speedBuffer;
+            float finalSpeed = currentSpeed + buff;
+            return finalSpeed;
+        }
+
+        public float GetFinalSpeed(float currentSpeed, float? minValue = null, float? maxValue = null)
+        {
+            float buff = m_points / m_speedBuffer;
+            float finalSpeed = Mathf.Clamp(currentSpeed + buff, minValue ?? -9999, maxValue ?? 9999);
+            return finalSpeed;
         }
     }
 }
