@@ -222,6 +222,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_basePointsAdd: 0.05
   m_secondsToBuffPoints: 30
+  m_speedBuffer: 10000
+  m_speedRange:
+    minValue: 6
+    maxValue: 25
 --- !u!1 &4466762883254111719
 GameObject:
   m_ObjectHideFlags: 0

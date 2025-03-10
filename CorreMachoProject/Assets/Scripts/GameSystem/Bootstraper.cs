@@ -16,6 +16,7 @@ namespace Game.GameSystem
         void Bootstrap()
         {
             InputManager.ProvideInstance();
+            AudioManager.ProvideInstance();
             GameManager.ProvideInstance();
             GameScenesManager.ProvideInstance().LoadSingleScene(m_firstSceneIndex);
         }

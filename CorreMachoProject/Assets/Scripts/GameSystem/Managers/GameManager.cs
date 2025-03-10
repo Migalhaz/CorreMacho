@@ -47,6 +47,7 @@ namespace Game
             m_AudioEnabled = enabled;
             int value = enabled ? 1 : 0;
             PlayerPrefs.SetInt(AUDIOKEY, value);
+            GameManagerStaticObserver.SetAudioValue(m_AudioEnabled);
         }
 
         void SwitchPause()
@@ -58,5 +59,11 @@ namespace Game
         {
             EnableAudio(!m_AudioEnabled);
         }
+    }
+
+    public static class GameManagerStaticObserver
+    {
+        public static event System.Action<bool> OnSetAudioValue;
+        public static void SetAudioValue(bool newValue) => OnSetAudioValue?.Invoke(newValue);
     }
 }

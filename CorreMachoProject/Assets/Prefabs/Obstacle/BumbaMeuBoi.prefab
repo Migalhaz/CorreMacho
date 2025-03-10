@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7284692866820915032, guid: 5557f2b7fba62b047bc78147e37ef052, type: 3}
+      propertyPath: m_obstaclePool
+      value: 
+      objectReference: {fileID: 11400000, guid: 86c1736841b3c7a46934d02c09e42be7, type: 2}
     - target: {fileID: 7768372546864181779, guid: 5557f2b7fba62b047bc78147e37ef052, type: 3}
       propertyPath: m_LocalScale.x
       value: 1

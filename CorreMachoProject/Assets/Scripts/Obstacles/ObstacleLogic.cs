@@ -15,8 +15,8 @@ namespace Game.Obstacles
 
         [Header("Move Settings")]
         [SerializeField, Min(0)] float m_speed;
-        [SerializeField, Min(1)] float m_speedBuffer;
-        [SerializeField] FloatRange m_speedRange;
+        [SerializeField] FloatRange m_speedClamp = new FloatRange(6f, 25f);
+        PlayerPoints m_playerPoints;
 
         private void OnEnable()
         {
@@ -25,11 +25,8 @@ namespace Game.Obstacles
 
         float GetMoveSpeed()
         {
-            PlayerManager player = PlayerManager.ProvideInstance();
-            int points = player.m_PlayerPoints.Points;
-            float buff = points / m_speedBuffer;
-            float finalSpeed = m_speedRange.Clamp(m_speed + buff);
-            return finalSpeed;
+            m_playerPoints = m_playerPoints != null ? m_playerPoints : PlayerManager.ProvideInstance().m_PlayerPoints;
+            return m_playerPoints.GetFinalSpeed(m_speed, m_speedClamp.minValue, m_speedClamp.maxValue);
         }
 
         private void Update()
@@ -40,8 +37,9 @@ namespace Game.Obstacles
 
         void Move()
         {
-            float moveSpeed = GetMoveSpeed() * Time.deltaTime;
-            Vector3 finalMoveVector = moveSpeed * Vector3.left;
+            float moveSpeed = GetMoveSpeed();
+            float finalMoveSpeed = moveSpeed * Time.deltaTime;
+            Vector3 finalMoveVector = finalMoveSpeed * Vector3.left;
             transform.Translate(finalMoveVector, Space.World);
         }
 
