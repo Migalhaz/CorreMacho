@@ -730,26 +730,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ParallaxController
       objectReference: {fileID: 0}
-    - target: {fileID: 4341606920713610009, guid: 87c273d37ee7c5d4b9f6d50ed3a0d2c9, type: 3}
-      propertyPath: m_backgrounds.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4341606920713610009, guid: 87c273d37ee7c5d4b9f6d50ed3a0d2c9, type: 3}
-      propertyPath: m_backgrounds.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: bcbaf6ca8e8381f4e867c4f4eff15920, type: 2}
-    - target: {fileID: 4341606920713610009, guid: 87c273d37ee7c5d4b9f6d50ed3a0d2c9, type: 3}
-      propertyPath: m_backgrounds.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: 4531310149d689345982a3358bac353c, type: 2}
-    - target: {fileID: 4341606920713610009, guid: 87c273d37ee7c5d4b9f6d50ed3a0d2c9, type: 3}
-      propertyPath: m_backgrounds.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: f2422ee4986f0884cbcfb290b9f09cd2, type: 2}
-    - target: {fileID: 4341606920713610009, guid: 87c273d37ee7c5d4b9f6d50ed3a0d2c9, type: 3}
-      propertyPath: m_backgrounds.Array.data[3]
-      value: 
-      objectReference: {fileID: 11400000, guid: 10b7ac3122aa1e9489d788eb79b50b37, type: 2}
     - target: {fileID: 5440840527878314310, guid: 87c273d37ee7c5d4b9f6d50ed3a0d2c9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1113,14 +1093,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 646342721570845735, guid: 805835c87afcdb14bb58968a482793b3, type: 3}
-      propertyPath: m_speedBuffer
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 1041106548025264447, guid: 805835c87afcdb14bb58968a482793b3, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -929221690, guid: 0eba8ded626eb0e4098885b79c6ccee5, type: 3}
     - target: {fileID: 1601999574258192625, guid: 805835c87afcdb14bb58968a482793b3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8
@@ -1161,45 +1133,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2426691310043263396, guid: 805835c87afcdb14bb58968a482793b3, type: 3}
-      propertyPath: m_jumpTime
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2426691310043263396, guid: 805835c87afcdb14bb58968a482793b3, type: 3}
-      propertyPath: m_jumpForce
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 4100019262642425165, guid: 805835c87afcdb14bb58968a482793b3, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5955630370214673221, guid: 805835c87afcdb14bb58968a482793b3, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5955630370214673221, guid: 805835c87afcdb14bb58968a482793b3, type: 3}
-      propertyPath: m_healthPoints
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5955630370214673221, guid: 805835c87afcdb14bb58968a482793b3, type: 3}
-      propertyPath: m_hitBox.m_triggerSize.x
-      value: 0.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 5955630370214673221, guid: 805835c87afcdb14bb58968a482793b3, type: 3}
-      propertyPath: m_hitBox.m_triggerSize.y
-      value: 0.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 5983554685285937856, guid: 805835c87afcdb14bb58968a482793b3, type: 3}
-      propertyPath: m_Size.x
-      value: 0.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 5983554685285937856, guid: 805835c87afcdb14bb58968a482793b3, type: 3}
-      propertyPath: m_Size.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5983554685285937856, guid: 805835c87afcdb14bb58968a482793b3, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.38
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

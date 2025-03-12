@@ -97,7 +97,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.38}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -108,7 +108,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.65, y: 0.1}
   m_EdgeRadius: 0
 --- !u!114 &5937225968377858492
 MonoBehaviour:
@@ -139,8 +139,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_rig: {fileID: 620812219347505367}
-  m_jumpForce: 15
-  m_jumpTime: 0.2
+  m_jumpForce: 10
+  m_jumpTime: 0.4
   m_jumpBufferingTime: 0.1
   m_groundCheck:
     m_triggerLayerMask:
@@ -206,7 +206,7 @@ MonoBehaviour:
       m_inColor: {r: 0, g: 1, b: 0, a: 1}
       m_outColor: {r: 1, g: 0, b: 0, a: 1}
     m_triggerOffset: {x: 0, y: 0}
-    m_triggerSize: {x: 1, y: 1}
+    m_triggerSize: {x: 0.55, y: 0.65}
     m_triggerAngle: 0
 --- !u!114 &646342721570845735
 MonoBehaviour:
@@ -223,9 +223,6 @@ MonoBehaviour:
   m_basePointsAdd: 0.05
   m_secondsToBuffPoints: 30
   m_speedBuffer: 10000
-  m_speedRange:
-    minValue: 6
-    maxValue: 25
 --- !u!1 &4466762883254111719
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,7 +298,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -929221690, guid: 0eba8ded626eb0e4098885b79c6ccee5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
