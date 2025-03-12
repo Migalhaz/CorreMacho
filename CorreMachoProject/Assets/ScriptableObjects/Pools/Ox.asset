@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ox
   m_EditorClassIdentifier: 
   m_Prefab: {fileID: 8045965043486106201, guid: 8c2db64c5cfed9c4ead5c4f3a226aa71, type: 3}
-  m_PoolSize: 10
+  m_PoolSize: 6
   m_ExpandablePool: 1
   m_DestroyExtraObjectsAfterUse: 0
   m_ExtraObjectsAllowed: 0

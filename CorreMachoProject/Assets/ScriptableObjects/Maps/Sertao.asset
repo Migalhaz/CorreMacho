@@ -53,3 +53,7 @@ MonoBehaviour:
       maxValue: 1.5
     m_backgroundSize: {x: 21.94, y: 0}
     m_backgroundSprite: {fileID: 21300000, guid: 3e7dc32be4c23aa42a4a27c40840fb95, type: 3}
+  m_sun: 1
+  m_sunSprite: {fileID: 21300000, guid: 30d1de9439156744cb69ff88fabcc892, type: 3}
+  m_sunPosition: {x: 2.3, y: 3.8}
+  m_sunSortOrder: -2

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bones
   m_EditorClassIdentifier: 
   m_Prefab: {fileID: 5475342025487093566, guid: 6c16ba2c09122f44294ac475030b7b57, type: 3}
-  m_PoolSize: 10
+  m_PoolSize: 6
   m_ExpandablePool: 1
   m_DestroyExtraObjectsAfterUse: 0
   m_ExtraObjectsAllowed: 0
