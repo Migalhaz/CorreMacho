@@ -9,6 +9,10 @@ namespace Game.GameSystem
 	public class Background : ScriptableObject
 	{
 		[SerializeField] List<BackgroundPart> m_backgrounds;
+		[SerializeField] bool m_sun;
+		[SerializeField] Sprite m_sunSprite;
+		[SerializeField] Vector2 m_sunPosition;
+		[SerializeField] int m_sunSortOrder;
 		public void DoSpawnObjects()
 		{
 			int spriteCount = m_backgrounds.Count;
@@ -17,6 +21,18 @@ namespace Game.GameSystem
 			{
 				m_backgrounds[i].SpawnObject(i - spriteCount);
 			}
+			SpawnSun();
+
+        }
+
+		void SpawnSun()
+		{
+			if (!m_sun) return;
+			GameObject sunGameObject = new GameObject("Sun");
+			sunGameObject.transform.position = m_sunPosition;
+			SpriteRenderer spriteRenderer = sunGameObject.GetOrAdd<SpriteRenderer>();
+			spriteRenderer.sortingOrder = m_sunSortOrder;
+			spriteRenderer.sprite = m_sunSprite;
 		}
 
 		public void MoveObjects()
