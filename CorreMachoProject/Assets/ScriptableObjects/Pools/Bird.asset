@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bird
   m_EditorClassIdentifier: 
   m_Prefab: {fileID: 2509873409220754790, guid: 1731df14cca57a847a2383e3c58df3e1, type: 3}
-  m_PoolSize: 10
+  m_PoolSize: 6
   m_ExpandablePool: 1
   m_DestroyExtraObjectsAfterUse: 0
   m_ExtraObjectsAllowed: 0

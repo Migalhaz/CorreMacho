@@ -442,6 +442,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner
       objectReference: {fileID: 0}
+    - target: {fileID: 2994762834686632995, guid: 4528b401dc8eb35489cafb53858d8272, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6531360733552792158, guid: 4528b401dc8eb35489cafb53858d8272, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -821,9 +829,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DDOL: 0
   m_removeEmptyPool: 1
-  m_pools: []
-  m_poolCollections:
-  - {fileID: 11400000, guid: 12407d3aabf13a4448c5c96fa8557150, type: 2}
+  m_pools:
+  - <m_PoolTag>k__BackingField: Ox
+    m_poolData: {fileID: 11400000, guid: 86c1736841b3c7a46934d02c09e42be7, type: 2}
+  - <m_PoolTag>k__BackingField: Bones
+    m_poolData: {fileID: 11400000, guid: 377179afe6ac6e146adb3e28695f2207, type: 2}
+  - <m_PoolTag>k__BackingField: Bird
+    m_poolData: {fileID: 11400000, guid: ca89abf394849774a8286facc839756a, type: 2}
+  m_poolCollections: []
 --- !u!1001 &918782984
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1242,6 +1255,10 @@ PrefabInstance:
     - target: {fileID: 4100019262642425165, guid: 805835c87afcdb14bb58968a482793b3, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955630370214673221, guid: 805835c87afcdb14bb58968a482793b3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
