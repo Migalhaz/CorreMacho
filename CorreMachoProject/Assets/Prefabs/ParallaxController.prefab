@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_backgrounds:
   - {fileID: 11400000, guid: 1bd49e1356a1b414284468d9e8b4952f, type: 2}
-  - {fileID: 11400000, guid: 4355e907bfda3c841a11a3ffb41c87b3, type: 2}
-  - {fileID: 11400000, guid: 4531310149d689345982a3358bac353c, type: 2}
-  - {fileID: 11400000, guid: f2422ee4986f0884cbcfb290b9f09cd2, type: 2}
-  - {fileID: 11400000, guid: 10b7ac3122aa1e9489d788eb79b50b37, type: 2}
+  - {fileID: 11400000, guid: e8d5d151e06bbab4eb40a61e576dca42, type: 2}
+  - {fileID: 11400000, guid: dbf11eaca3894ff4c98b333ac053d09d, type: 2}
+  - {fileID: 11400000, guid: ce365cc4f3fc7ab42a2de3ca182ab394, type: 2}
+  - {fileID: 11400000, guid: bcbaf6ca8e8381f4e867c4f4eff15920, type: 2}
