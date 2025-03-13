@@ -10,14 +10,14 @@ namespace Game.HUD
     {
         UnityEngine.UI.Button m_button;
 
-        private void OnEnable()
+        protected virtual void OnEnable()
         {
             m_button ??= gameObject.GetOrAdd<UnityEngine.UI.Button>();
             m_button.onClick.AddListener(Click);
 
         }
 
-        private void OnDisable()
+        protected virtual void OnDisable()
         {
             m_button.onClick.RemoveListener(Click);
         }
